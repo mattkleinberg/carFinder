@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Welcome to Carfinder</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0-beta.1/jquery.mobile-1.2.0-beta.1.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+		<link rel = "stylesheet" href="css/style.css" />
+		<script src="js/scripts.js"></script>
+	</head>
+	<body>
+		<div id="start" data-role="page">
+			<div data-role="header">
+				<div id="header">&nbsp;</div>
+					<div data-role="navbar">
+						<ul>
+							<li><a href="home.html">Home</a></li>
+							<li><a href="carfinder.html">Get Started</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</div>
+			</div>
+			<div id="content" data-role="content">
+				<div id="formInfo">
+					<form id="findACar" method="post" action="carFound.php" data-ajax="false">
+							<p>
+								<select id="make" name="make">
+									<option>Select a Make</option>
+								</select>
+							</p>
+							<p>
+								<select id="model" name="model">
+									<option>Select a Model</option>
+								</select>
+							</p>
+							<p>
+								<select id="year" name="year">
+									<option>Select a Year</option>
+									<option>2012</option>
+									<option>2011</option>
+									<option>2010</option>
+									<option>2009</option>
+									<option>2008</option>
+									<option>2007</option>
+									<option>2006</option>
+									<option>2005</option>
+									<option>2004</option>
+									<option>2003</option>
+									<option>2002</option>
+									<option>2001</option>
+									<option>2000</option>
+									<option>1999</option>
+								</select>
+							</p>
+							<input type="text" id="zip" name="zip" placeholder="Enter your zip" /></p>
+							<p id="searchButtonHolder">
+								<input name="subButton" type="submit"  value="Search" />
+							</p>
+					</form>
+				</div>
+			</div>
+			<div class="footWrapper"><div data-role="footer" id="footer">&nbsp;</div></div>
+		</div>
+	</body>
+</html>
